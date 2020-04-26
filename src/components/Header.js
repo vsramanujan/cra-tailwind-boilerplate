@@ -12,7 +12,7 @@ export default function Header() {
     <header className="text-gray-800 bg-gray-100 text-center pt-4 items-center flex justify-center">
       <div className="flex-grow">
         <a
-          href="https://github.com/vsramanujan"
+          href="https://github.com/vsramanujan/cra-tailwind-boilerplate/issues/new"
           target="_blank"
           rel="noopener noreferrer"
           className="text-lg font-hairline inline-flex"
