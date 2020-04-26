@@ -1,0 +1,51 @@
+{
+  "name": "github-aggregator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "html": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "proxy": "http://localhost:8001/",
+  "scripts": {
+    "tailwind:dev": "postcss src/styles/index.css -o src/styles/tailwind.generated.css -w",
+    "tailwind:prod": "postcss src/styles/index.css -o src/styles/tailwind.generated.css",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently --kill-others-on-fail \"nodemon server/index.js\" \"yarn tailwind:dev\"  \"yarn start\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
+    "nodemon": "^2.0.3",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.3.3",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^1.3.5"
+  }
+}
